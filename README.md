@@ -4,7 +4,6 @@
 |***Özellikler***|  |
 |--------------------------|--|
 |    - Kendinize özel oyun (ve program listeniz) sayesinde dilediğiniz programa daha hızlı erişebilme.       
-- Dilediğiniz gibi oyun ekleyebilmek/kaldırabilmek.               |  |
-- Bütün bu kayıtlarınız ve ayarlarınızın programla aynı dizindeki ayar.ini'ye kaydedilmesi.               |  |
-- Olası yeniliklerde görüntüleyebileceğiniz Changelog (Değişiklikler) tuşu.            |  |
-
+|- Dilediğiniz gibi oyun ekleyebilmek/kaldırabilmek.                 |
+|- Bütün bu kayıtlarınız ve ayarlarınızın programla aynı dizindeki ayar.ini'ye kaydedilmesi.                 |
+|- Olası yeniliklerde görüntüleyebileceğiniz Changelog (Değişiklikler) tuşu.              |
