@@ -1,0 +1,13 @@
+C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\WindowsApp1.vbproj.AssemblyReference.cache
+C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\WindowsApp1.vbproj.GenerateResource.cache
+C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\WindowsApp1.vbproj.CoreCompileInputs.cache
+C:\Users\koray abinin pc\source\repos\WindowsApp1\bin\Debug\TurkLib.exe.config
+C:\Users\koray abinin pc\source\repos\WindowsApp1\bin\Debug\TurkLib.exe
+C:\Users\koray abinin pc\source\repos\WindowsApp1\bin\Debug\TurkLib.pdb
+C:\Users\koray abinin pc\source\repos\WindowsApp1\bin\Debug\TurkLib.xml
+C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.Form1.resources
+C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.Form2.resources
+C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.Resources.resources
+C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.exe
+C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.xml
+C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.pdb
