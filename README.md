@@ -1,9 +1,9 @@
-# TurkLib v1.0 (turkvuaz's game library)
-**Tamamen türkçe** olmasıyla beraber bu programın fonksiyonu oyunlarınızı listenize ekleyip liste üzerinden çalışmanızı sağlayan bir kısayol görevi görmesi.
+# TurkLib b0.1 (turkvuaz's game library)
+The function of this program, which is **completely Turkish**, is to add your games to your list and act as a shortcut that allows you to work through the list.
 
-|***Özellikler***|  |
+|***Features***|  |
 |--------------------------|--|
-|    - Kendinize özel oyun (ve program listeniz) sayesinde dilediğiniz programa daha hızlı erişebilme.       
-|- Dilediğiniz gibi oyun ekleyebilmek/kaldırabilmek.                 |
-|- Bütün bu kayıtlarınız ve ayarlarınızın programla aynı dizindeki ayar.ini'ye kaydedilmesi.                 |
-|- Olası yeniliklerde görüntüleyebileceğiniz Changelog (Değişiklikler) tuşu.              |
+|    - Faster access to any program you want thanks to your own personalized list of games (and programs).       
+|- Add or remove games as you wish.                 |
+|- All your saves and settings are saved in ayar.ini in the same directory as the program.                 |
+|- Changelog button where you can view possible updates.              |
