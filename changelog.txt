@@ -1,2 +1,4 @@
 b0.2
 - .lnk support added.
+- Changelog / Settings added.
+- Now you can update program automaticly.
