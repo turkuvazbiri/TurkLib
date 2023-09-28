@@ -10,3 +10,5 @@ C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.vbproj.CoreC
 C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.exe
 C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.xml
 C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.pdb
+C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.vbproj.AssemblyReference.cache
+C:\Users\koray abinin pc\source\repos\WindowsApp1\obj\Debug\TurkLib.Form3.resources

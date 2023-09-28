@@ -1,10 +1,12 @@
 ﻿Imports System.IO
 Imports System.Windows.Forms
 Imports System.Drawing
+Imports System.Net
 
 
 
 Public Class Form1
+    Private surumkodu As String = "b0.2" ' Version Code
     Dim yoneticitiki As Boolean = False
     ' INI dosyasının yolu
     Private ayarDosyaYolu As String = "ayar.ini"
@@ -50,6 +52,31 @@ Public Class Form1
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim yoneticitiki As Boolean = False
+        If My.Settings.surumkontrol = True Then
+            Try
+                ' GitHub Raw URL'i
+                Dim rawURL As String = "https://raw.githubusercontent.com/turkuvazbiri/TurkLib/main/version.txt"
+
+                ' WebClient kullanarak GitHub'dan sürüm kodunu çek
+                Dim webClient As New WebClient()
+                Dim yeniSurumKodu As String = webClient.DownloadString(rawURL)
+
+                ' Sürüm kodunu karşılaştır
+                If surumkodu <> yeniSurumKodu Then
+                    ' Eşleşmeyen sürüm kodları, güncelleme var
+                    MessageBox.Show("Yeni bir güncelleme bulunuyor. Mevcut Sürüm: " & surumkodu & Environment.NewLine &
+                                    "Yeni Sürüm: " & yeniSurumKodu, "Güncelleme Var", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    ' Yeni sürüm kodunu kaydet
+                Else
+                    ' Eşleşen sürüm kodları, güncelleme yok
+                    MessageBox.Show("Mevcut sürüm en güncel.", "Güncelleme Yok", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                End If
+
+            Catch ex As Exception
+                ' Hata durumunda hatayı göster
+                MessageBox.Show("Sürüm kontrol hatası: " & ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            End Try
+        End If
 
         Dim kullaniciAdi As String = Environment.UserName
         Label2.Text = kullaniciAdi
@@ -140,5 +167,29 @@ Public Class Form1
         End If
     End Sub
 
+    Private Sub CheckBox1_CheckedChanged_1(sender As Object, e As EventArgs)
 
+    End Sub
+
+    Private Sub Button4_Click_1(sender As Object, e As EventArgs) Handles Button4.Click
+        Form3.Show()
+
+    End Sub
+
+    Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
+        Try
+            ' GitHub Raw URL'i
+            Dim rawURL As String = "https://raw.githubusercontent.com/turkuvazbiri/TurkLib/main/changelog.txt"
+
+            ' WebClient kullanarak dosyayı indirin
+            Dim webClient As New WebClient()
+            Dim metin As String = webClient.DownloadString(rawURL)
+
+            ' Dosya içeriğini MessageBox'ta göster
+            MessageBox.Show(metin, "Sürüm Değişiklikleri", MessageBoxButtons.OK, MessageBoxIcon.Information)
+        Catch ex As Exception
+            ' Hata durumunda hatayı göster
+            MessageBox.Show("Dosya indirme hatası: " & ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End Try
+    End Sub
 End Class

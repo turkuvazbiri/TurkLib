@@ -21,7 +21,7 @@ Public Class Form2
         Dim ad_v As String = TextBox1.Text
         Dim boyut_v As String = TextBox2.Text
         Dim yol_v As String = TextBox3.Text
-
+        _form1.ListViewItemEkle(ad_v, boyut_v, yol_v)
         ' Form1'deki ListView'e öğe eklemek için Form1 referansını kullanın
 
     End Sub
@@ -29,8 +29,8 @@ Public Class Form2
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Dim openFileDialog As New OpenFileDialog()
 
-        openFileDialog.Filter = "Executable Files (*.exe)|*.exe"
-        openFileDialog.Title = "Exe Dosyası Seçin"
+        openFileDialog.Filter = "Executable Files (*.exe)|*.exe|Kısayol Dosyaları (*.lnk)|*.lnk"
+        openFileDialog.Title = "Exe veya .lnk Dosyası Seçin"
 
         If openFileDialog.ShowDialog() = DialogResult.OK Then
             Dim secilenDosyaYolu As String = openFileDialog.FileName
@@ -38,8 +38,10 @@ Public Class Form2
             ' Dosyanın .exe uzantısını kontrol edin
             If Path.GetExtension(secilenDosyaYolu).ToLower() = ".exe" Then
                 TextBox3.Text = secilenDosyaYolu
+            ElseIf Path.GetExtension(secilenDosyaYolu).ToLower() = ".lnk" Then
+                TextBox3.Text = secilenDosyaYolu
             Else
-                MessageBox.Show("Lütfen sadece .exe uzantılı bir dosya seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                MessageBox.Show("Lütfen sadece .exe veya .lnk uzantılı bir dosya seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error)
             End If
         End If
     End Sub

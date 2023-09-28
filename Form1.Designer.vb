@@ -35,7 +35,8 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.SuspendLayout()
         '
         'ListView1
@@ -109,7 +110,7 @@ Partial Class Form1
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft YaHei", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(567, 26)
+        Me.Label3.Location = New System.Drawing.Point(565, 48)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(167, 17)
         Me.Label3.TabIndex = 4
@@ -137,22 +138,35 @@ Partial Class Form1
         Me.Button3.Text = "Seçili oyunu kaldır"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'CheckBox1
+        'Button4
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(657, 496)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(77, 17)
-        Me.CheckBox1.TabIndex = 7
-        Me.CheckBox1.Text = "Changelog"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.Button4.FlatStyle = System.Windows.Forms.FlatStyle.System
+        Me.Button4.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(115, 456)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(91, 34)
+        Me.Button4.TabIndex = 8
+        Me.Button4.Text = "Ayarlar"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.Font = New System.Drawing.Font("Verdana", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LinkLabel1.Location = New System.Drawing.Point(664, 9)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(68, 13)
+        Me.LinkLabel1.TabIndex = 9
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "Changelog"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(743, 516)
-        Me.Controls.Add(Me.CheckBox1)
+        Me.Controls.Add(Me.LinkLabel1)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label3)
@@ -163,7 +177,7 @@ Partial Class Form1
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "TurkLib v1.0"
+        Me.Text = "TurkLib b0.2"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -180,5 +194,6 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
-    Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents Button4 As Button
+    Friend WithEvents LinkLabel1 As LinkLabel
 End Class
