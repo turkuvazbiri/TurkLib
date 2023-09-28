@@ -1,4 +1,4 @@
-# TurkLib b0.1 (turkvuaz's game library)
+# TurkLib b0.2 (turkvuaz's game library)
 The function of this program, which is **completely Turkish**, is to add your games to your list and act as a shortcut that allows you to work through the list.
 
 |***Features***|  |
